@@ -1,0 +1,229 @@
+/* ROOT & GENERAL*/
+.root {
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-color: #f8f9fa;
+}
+
+/* MENU BAR - */
+.menu-bar {
+    -fx-background-color: white;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #e9ecef;
+    -fx-padding: 5 10;
+}
+
+.menu-bar .label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #212529;
+}
+
+.menu:hover,
+.menu:showing {
+    -fx-background-color: #f8f9fa;
+}
+
+.context-menu {
+    -fx-background-color: white;
+    -fx-border-color: #dee2e6;
+    -fx-border-width: 1;
+    -fx-padding: 5;
+}
+
+.menu-item {
+    -fx-padding: 10 20;
+    -fx-background-color: transparent;
+}
+
+.menu-item:hover {
+    -fx-background-color: #f8f9fa;
+}
+
+/* HEADER  */
+.header-box {
+    -fx-background-color: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -fx-padding: 40 50;
+}
+
+.header-title {
+    -fx-font-size: 48px;
+    -fx-font-family: "Rockwell Extra Bold", "Rockwell", serif;
+    -fx-font-weight: 300;
+    -fx-text-fill: white;
+    -fx-letter-spacing: 1px;
+}
+
+/* BUTTONS */
+.button {
+    -fx-background-color: white;
+    -fx-text-fill: #667eea;
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+    -fx-padding: 6 20;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-border-width: 0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 4);
+}
+
+.button:hover {
+    -fx-background-color: #f8f9fa;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.15), 15, 0, 0, 6);
+    -fx-translate-y: -2;
+}
+
+.button:pressed {
+    -fx-translate-y: 0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 2);
+}
+
+.button-primary {
+    -fx-background-color: #768ae2;
+    -fx-text-fill: white;
+}
+
+.button-primary:hover {
+    -fx-background-color: #5568d3;
+}
+
+/* SEARCH & FILTER BAR */
+.search-filter-box {
+    -fx-background-color: white;
+    -fx-padding: 15 20;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #e9ecef;
+}
+
+/* TEXT FIELDS & INPUTS */
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: #ced4da;
+    -fx-border-width: 1;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-padding: 6 12;
+    -fx-font-size: 14px;
+    -fx-text-fill: #212529;
+}
+
+.text-field:focused {
+    -fx-border-color: #667eea;
+    -fx-border-width: 2;
+    -fx-background-color: white;
+}
+
+/* COMBO BOX */
+.combo-box {
+    -fx-background-color: white;
+    -fx-border-color: #ced4da;
+    -fx-border-width: 1;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-padding: 4 6;
+}
+
+.combo-box:focused {
+    -fx-border-color: #667eea;
+    -fx-border-width: 2;
+}
+
+.combo-box .list-cell {
+    -fx-padding: 10 12;
+}
+
+/* TABLE VIEW */
+.table-view {
+    -fx-background-color: white;
+    -fx-font-size: 14px;
+    -fx-border-width: 0;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #e7ecff;  
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-font-size: 13px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #495057;
+    -fx-padding: 16 12;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: #dee2e6;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #495057;
+}
+
+/* Table Rows */
+.table-row-cell {
+    -fx-background-color: white;
+    -fx-border-width: 0;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f8f9fa;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #e7f3ff;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #cce5ff;
+}
+
+.table-cell {
+    -fx-padding: 16 12;
+    -fx-text-fill: #212529;
+    -fx-border-width: 0;
+}
+
+/* Empty table message */
+.table-view .placeholder .label {
+    -fx-text-fill: #6c757d;
+    -fx-font-size: 16px;
+}
+
+/* FOOTER STATS*/
+.footer-box {
+    -fx-background-color: white;
+    -fx-padding: 20 50;
+    -fx-border-width: 1 0 0 0;
+    -fx-border-color: #e9ecef;
+}
+
+.stats-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #6c757d;
+}
+
+/* SCROLLBAR  */
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #ced4da;
+    -fx-background-radius: 4;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #adb5bd;
+}
+
+.scroll-bar .track {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+/* LABELS*/
+.label {
+    -fx-text-fill: #212529;
+}

@@ -11,32 +11,34 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="450.0" spacing="15.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="450.0" spacing="15.0" styleClass="dialog-content" stylesheets="@AddTaskDialog.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
    <padding>
       <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
    </padding>
    <children>
       <Label style="-fx-font-size: 20; -fx-font-weight: bold;" text="Add New Task" />
       <Label text="Title *" />
-      <TextField fx:id="txtTitle" style="-fx-font-style: #667eea;" text="Enter title..." />
+      <TextField fx:id="txtTitle" style="-fx-font-style: #667eea;" />
       <Label text="Description" />
-      <TextArea fx:id="txtDescription" prefHeight="100.0" prefRowCount="3" prefWidth="200.0" text="Enter Description..." />
+      <TextArea fx:id="txtDescription" prefHeight="100.0" prefRowCount="3" prefWidth="200.0" />
       <Label text="Due Date *" />
       <DatePicker fx:id="datePicker" />
       <Label text="Category *" />
-      <ComboBox fx:id="comboCategory" prefWidth="150.0" />
+      <ComboBox fx:id="comboCategory" prefHeight="0.0" prefWidth="150.0" styleClass="combo-box" />
       <Label text="Priority *" />
-      <ChoiceBox fx:id="choicePriority" prefWidth="150.0" />
+      <ChoiceBox fx:id="choicePriority" prefWidth="150.0" styleClass="combo-box" />
       <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
          <children>
-            <Button fx:id="btnAdd" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" text="Add">
+            <Button fx:id="btnAdd" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" style="-fx-text-fill: white; -fx-font-weight: bold;" styleClass="button-add" text="Add">
                <HBox.margin>
                   <Insets right="50.0" />
                </HBox.margin>
             </Button>
-            <Button fx:id="btnCancel" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" text="Cancel" />
+            <Button fx:id="btnCancel" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" style="-fx-text-fill: white; -fx-font-weight: bold;" styleClass="button-cancel" text="Cancel" />
          </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
       </HBox>
    </children>
 </VBox>

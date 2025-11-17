@@ -6,12 +6,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="400.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label prefHeight="150.0" prefWidth="400.0" style="-fx-background-color: linear-gradient(to bottom, #667eea, #764ba2);" text="     Task Details" textFill="WHITE">
+      <Label prefHeight="150.0" prefWidth="400.0" style="-fx-background-color: linear-gradient(to bottom, #667eea, #764ba2);" text="    Task Details" textFill="WHITE">
          <font>
-            <Font name="Rockwell Extra Bold" size="25.0" />
+            <Font name="Rockwell Extra Bold" size="27.0" />
          </font>
          <VBox.margin>
             <Insets bottom="20.0" />
@@ -62,7 +61,7 @@
             <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
          </padding>
          <children>
-            <Button fx:id="btnComplete" mnemonicParsing="false" prefHeight="40.0" prefWidth="400.0" style="-fx-background-color: #8BC34A; -fx-text-fill: white; -fx-font-weight: bold;" text="Mark as Completed" />
+            <Button fx:id="btnComplete" mnemonicParsing="false" prefHeight="40.0" prefWidth="400.0" style="-fx-background-color: #25d64e; -fx-text-fill: white; -fx-font-weight: bold;" text="Mark as Completed" />
             <Button fx:id="btnEdit" mnemonicParsing="false" prefHeight="40.0" prefWidth="400.0" style="-fx-background-color: #FF9800; -fx-text-fill: white; -fx-font-weight: bold;" text="Edit Task" />
             <Button fx:id="btnDelete" mnemonicParsing="false" prefHeight="40.0" prefWidth="400.0" style="-fx-background-color: #f44336; -fx-text-fill: white; -fx-font-weight: bold;" text="Delete Task" />
          </children>
