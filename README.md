@@ -1,6 +1,15 @@
 # fx:id Lists
 
 ## mainView.fxml
+
+### MenuBar:
+| UI Element          | `fx:id`         |
+| ------------------- | --------------- |
+| Add New Task Button | `menuAddTask`   |
+| User Guide          | `menuUserGuide` |
+| About               | `menuAbout`     |
+| Exit                | `menuExit`      |
+
 ### Header:
 | UI Element          | `fx:id`         |
 | ------------------- | --------------- |
