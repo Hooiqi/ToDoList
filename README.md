@@ -5,7 +5,7 @@
 ### MenuBar:
 | UI Element          | `fx:id`         |
 | ------------------- | --------------- |
-| Add New Task Button | `menuAddTask`   |
+| Add New Task        | `menuAddTask`   |
 | User Guide          | `menuUserGuide` |
 | About               | `menuAbout`     |
 | Exit                | `menuExit`      |
