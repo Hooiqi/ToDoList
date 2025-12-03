@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #f7f6fb;" stylesheets="@mainView.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="catasm1.MainViewController">   
+   <center>
+      <VBox prefHeight="458.0" prefWidth="1200.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="90.0" prefWidth="1200.0" spacing="15.0" style="-fx-padding: 20 30;" styleClass="search-filter-box">
+               <children>
+                  <Label style="-fx-text-fill: #756AB6;" styleClass="search-label" text="Search:">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtSearch" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefWidth="350.0" promptText="Search tasks" style="-fx-background-color: white; -fx-border-color: #9f86c0; -fx-border-width: 2; -fx-border-radius: 10; -fx-padding: 6;" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TextField>
+                  <Label styleClass="filter-label" text="Filter:" textFill="#756ab6">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="comboFilter" prefWidth="180.0" promptText="Select filter" style="-fx-background-color: white; -fx-border-color: #AC87C5; -fx-border-width: 2; -fx-border-radius: 10; -fx-padding: 6 10;" />
+                  <Button fx:id="btnSearch" mnemonicParsing="false" prefHeight="38.0" prefWidth="122.0" style="-fx-background-color: #756AB6; -fx-background-radius: 12; -fx-text-fill: white; -fx-cursor: hand; -fx-effect: dropshadow(three-pass-box, rgba(117, 106, 182, 0.3), 10, 0, 0, 4);;" styleClass="button" text="Search" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="ROGFonts-Regular" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <TableView fx:id="tableViewTasks" prefHeight="334.0" prefWidth="1200.0" style="-fx-background-radius: 8;" styleClass="table" VBox.vgrow="ALWAYS">
+              <columns>
+                <TableColumn fx:id="colTitle" prefWidth="232.80004501342773" text="Title" />
+                <TableColumn fx:id="colDescription" prefWidth="416.0000762939453" text="Description" />
+                  <TableColumn fx:id="colDueDate" prefWidth="152.0" text="Due Date" />
+                  <TableColumn fx:id="colCategory" prefWidth="129.5999755859375" text="Category" />
+                  <TableColumn fx:id="colPriority" prefWidth="105.599853515625" text="Priority" />
+                  <TableColumn fx:id="colStatus" prefWidth="140.0" text="Status" />
+              </columns>
+            </TableView>
+         </children>
+         <padding>
+            <Insets top="15.0" />
+         </padding>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox prefHeight="78.0" prefWidth="1200.0" spacing="15.0" style="-fx-padding: 10 50; -fx-background-color: linear-gradient(to bottom,  #f7f6fb, #e1dbed);" styleClass="footer-box" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+         </padding>
+         <children>
+            <Label fx:id="lblTotalTasks" style="-fx-text-fill: #756AB6;">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCompleted" style="-fx-text-fill: #756AB6;">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblPending" style="-fx-text-fill: #756AB6;">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <VBox prefHeight="150.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem fx:id="menuAddTask" mnemonicParsing="false" text="Add New Task" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                        <MenuItem fx:id="menuAbout" mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Exit">
+                  <items>
+                    <MenuItem fx:id="menuExit" mnemonicParsing="false" text="Exit Program" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <HBox alignment="CENTER_LEFT" prefHeight="149.0" prefWidth="1200.0" style="-fx-background-color: linear-gradient(to right, #5e548e, #9f86c0, #AC87C5); -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.25), 10, 0, 0, 5);">
+               <children>
+                  <Label prefHeight="70.0" prefWidth="342.0" style="-fx-effect: dropshadow(gaussian, rgba(255,255,255,0.3), 20, 0, 0, 0);" styleClass="header-title" text="To Do List" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="40.0" right="500.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="ROGFonts-Regular" size="40.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnAddNewTask" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="54.0" prefWidth="241.0" style="-fx-background-color: white; -fx-text-fill: #9f86c0; -fx-padding: 10 20 10 20; -fx-background-radius: 6;" text="➕  Add New Task" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="ROGFonts-Regular" size="17.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>

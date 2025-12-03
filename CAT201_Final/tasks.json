@@ -1,0 +1,38 @@
+[
+    {
+        "dueDate": "2025-11-27",
+        "description": "",
+        "title": "haha",
+        "category": "Health",
+        "priority": "High",
+        "status": "Completed",
+        "isCompleted": true
+    },
+    {
+        "dueDate": "2025-11-24",
+        "description": "Jogging",
+        "title": "Exercise",
+        "category": "Personal",
+        "priority": "High",
+        "status": "Completed",
+        "isCompleted": true
+    },
+    {
+        "dueDate": "2025-11-24",
+        "description": "Complete the CAT report",
+        "title": "Assignment ",
+        "category": "Study",
+        "priority": "High",
+        "status": "Pending",
+        "isCompleted": false
+    },
+    {
+        "dueDate": "2025-11-24",
+        "description": "meet to discuss progress report ",
+        "title": "meet with x ",
+        "category": "Work",
+        "priority": "Medium",
+        "status": "Pending",
+        "isCompleted": false
+    }
+]

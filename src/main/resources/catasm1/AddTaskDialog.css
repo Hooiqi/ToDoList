@@ -1,0 +1,51 @@
+.button:hover {
+    -fx-opacity: 0.85;
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+    -fx-cursor: hand;
+}
+
+#btnAdd:hover {
+    -fx-background-color: #6f5580;
+}
+
+#btnCancel:hover {
+    -fx-background-color: #c999b3;
+}
+
+.text-field:hover {
+    -fx-border-color: #88689e;
+    -fx-border-width: 2;
+}
+
+.text-area:hover {
+    -fx-border-color: #88689e;
+    -fx-border-width: 2;
+}
+
+.date-picker:hover {
+    -fx-border-color: #88689e;
+    -fx-border-width: 2;
+}
+
+.combo-box:hover {
+    -fx-border-color: #88689e;
+    -fx-border-width: 2;
+}
+
+.choice-box:hover {
+    -fx-border-color: #88689e;
+    -fx-border-width: 2;
+}
+
+.text-field:focused,
+.text-area:focused {
+    -fx-border-color: #6055a9;
+    -fx-border-width: 2;
+}
+
+.combo-box:focused,
+.choice-box:focused {
+    -fx-border-color: #6055a9;
+    -fx-border-width: 2;
+}

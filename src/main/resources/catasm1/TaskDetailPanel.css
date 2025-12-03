@@ -1,0 +1,39 @@
+.button:hover {
+    -fx-opacity: 0.85;
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+#btnComplete:hover {
+    -fx-background-color: #8a6fa8;
+}
+
+#btnEdit:hover {
+    -fx-background-color: #a77dac;
+}
+
+#btnDelete:hover {
+    -fx-background-color: #c999b3;
+}
+
+#btnSave:hover {
+    -fx-background-color: #6f5273;
+}
+
+#btnCancelEdit:hover {
+    -fx-background-color: #c999b3;
+}
+
+.text-field:hover,
+.text-area:hover {
+    -fx-border-color: #886891;
+}
+
+.combo-box:hover,
+.choice-box:hover {
+    -fx-border-color: #886891;
+}
+
+.date-picker:hover {
+    -fx-border-color: #886891;
+}
